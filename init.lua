@@ -42,4 +42,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-require('Comment').setup()
+--require('Comment').setup()
+
+vim.api.nvim_set_keymap(
+    'n',
+    '\\c ',
+    '<Plug>(comment_toggle_linewise_current)',
+    { noremap = false, silent = true }
+)
+vim.api.nvim_set_keymap(
+    'v',
+    '\\c ',
+    '<Plug>(comment_toggle_linewise_visual)',
+    { noremap = false, silent = true }
+)

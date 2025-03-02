@@ -24,10 +24,6 @@ return {
       }
     end,
   },
-  {
-    'numToStr/Comment.nvim',
-    lazy = false,
-  },
   -- flutter
   {
     'akinsho/flutter-tools.nvim',
@@ -48,8 +44,6 @@ return {
   },
   {
     'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
-  }
+    lazy = false,
+  },
 }
