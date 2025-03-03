@@ -25,23 +25,23 @@ return {
     end,
   },
   -- flutter
-  {
-    'akinsho/flutter-tools.nvim',
-    lazy = false,
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      'stevearc/dressing.nvim',
-    },
-    config = function()
-      require("flutter-tools").setup {
-        lsp = {
-          cmd = {"dart", "language-server", "--protocol=lsp"},
-          -- explicitly set SDK path (if needed)
-          -- TODO: set sdk_path = "<dart sdk path>"
-        }
-      }
-    end
-  },
+  -- {
+  --   'akinsho/flutter-tools.nvim',
+  --   lazy = false,
+  --   dependencies = {
+  --     'nvim-lua/plenary.nvim',
+  --     'stevearc/dressing.nvim',
+  --   },
+  --   config = function()
+  --     require("flutter-tools").setup {
+  --       lsp = {
+  --         cmd = {"dart", "language-server", "--protocol=lsp"},
+  --         -- explicitly set SDK path (if needed)
+  --         -- TODO: set sdk_path = "<dart sdk path>"
+  --       }
+  --     }
+  --   end
+  -- },
   {
     'numToStr/Comment.nvim',
     lazy = false,
