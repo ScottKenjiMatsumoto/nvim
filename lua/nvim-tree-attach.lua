@@ -13,6 +13,7 @@ function M.my_on_attach(bufnr)
   -- custom mappings
   vim.keymap.set('n', 'u', api.tree.change_root_to_parent, opts('Up'))
   vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
+  vim.keymap.del('n', 'M', { buffer = bufnr })
 end
 
 return M
