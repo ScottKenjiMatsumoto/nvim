@@ -2,13 +2,13 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    config = function () 
+    config = function ()
       local configs = require("nvim-treesitter.configs")
       configs.setup({
         ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "terraform", "dart" },
         sync_install = false,
         highlight = { enable = true },
-        indent = { enable = true },  
+        indent = { enable = true },
       })
     end
   },
@@ -20,7 +20,12 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
+      -- Import your custom on_attach function
+      local my_on_attach = require("nvim-tree-attach").my_on_attach
+
       require("nvim-tree").setup {
+        on_attach = my_on_attach,
+        -- other options...
       }
     end,
   },
