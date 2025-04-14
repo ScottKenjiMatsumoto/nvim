@@ -1,4 +1,5 @@
 vim.opt.mouse = 'a' -- enable mouse (all modes)
+vim.opt.number = true
 -- vim.g.term_opencmd = 'split term://%s'
 
 -- Basic settings
