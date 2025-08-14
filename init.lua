@@ -57,3 +57,12 @@ vim.api.nvim_set_keymap(
     '<Plug>(comment_toggle_linewise_visual)',
     { noremap = false, silent = true }
 )
+vim.keymap.set('v', '*', function()
+  vim.cmd('norm! "sy')
+  local selection = vim.fn.getreg('s')
+  -- Escape special characters for literal search
+  selection = vim.fn.escape(selection, '/\\')
+  selection = selection:gsub('\n', '\\n')
+  vim.fn.setreg('/', '\\V' .. selection)
+  vim.cmd('norm! n')
+end)
