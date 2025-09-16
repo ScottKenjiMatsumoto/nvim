@@ -16,6 +16,10 @@ return {
       })
     end
   },
+
+  -- ✅ Minimal Mermaid highlighting for .mmd/.mermaid
+  { "mracos/mermaid.vim" }, -- lightweight Vim syntax plugin
+
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -24,7 +28,6 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
-      -- Import your custom on_attach function
       local my_on_attach = require("nvim-tree-attach").my_on_attach
 
       require("nvim-tree").setup {

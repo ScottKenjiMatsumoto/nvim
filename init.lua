@@ -13,6 +13,12 @@ vim.o.shiftwidth = 2
 vim.o.background = 'dark'
 vim.o.termguicolors = true
 vim.cmd('colorscheme habamax') -- Setting colorscheme
+vim.cmd([[
+  highlight Normal guibg=NONE ctermbg=NONE
+  highlight NonText guibg=NONE ctermbg=NONE
+  highlight SignColumn guibg=NONE ctermbg=NONE
+  highlight EndOfBuffer guibg=NONE ctermbg=NONE
+]])
 
 -- xclip
 vim.g.clipboard = {
