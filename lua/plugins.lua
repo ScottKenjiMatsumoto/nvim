@@ -1,6 +1,7 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    commit = "42fc28ba918343ebfd5565147a42a26580579482", -- v0.10.0
     build = ":TSUpdate",
     config = function ()
       local configs = require("nvim-treesitter.configs")
@@ -22,7 +23,7 @@ return {
 
   {
     "nvim-tree/nvim-tree.lua",
-    version = "*",
+    commit = "321bc61580fd066b76861c32de3319c3a6d089e7", -- v1.14.0
     lazy = false,
     dependencies = {
       "nvim-tree/nvim-web-devicons",
