@@ -49,7 +49,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
---require('Comment').setup()
 
 vim.api.nvim_set_keymap(
     'n',

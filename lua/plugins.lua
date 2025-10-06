@@ -27,6 +27,7 @@ return {
     lazy = false,
     dependencies = {
       "nvim-tree/nvim-web-devicons",
+      commit = "b8221e42cf7287c4dcde81f232f58d7b947c210d",
     },
     config = function()
       local my_on_attach = require("nvim-tree-attach").my_on_attach
