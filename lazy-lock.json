@@ -1,7 +1,9 @@
 {
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "live-server.nvim": { "branch": "main", "commit": "58f2e30e029a57dbda15c5749edd8d642578859f" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
+  "mermaid-playground.nvim": { "branch": "main", "commit": "55ade6de60ad4a2fba683d33e940c166230f18e2" },
   "mermaid.vim": { "branch": "main", "commit": "a8470711907d47624d6860a2bcbd0498a639deb6" },
   "nvim-tree.lua": { "branch": "master", "commit": "321bc61580fd066b76861c32de3319c3a6d089e7" },
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
